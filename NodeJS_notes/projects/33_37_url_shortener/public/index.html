@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJS | URL Shortener</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main-con">
+        <form>
+            <h1 class="main-heading"><span class="node">Node</span><span class="js">JS</span> URL Shortener</h1>
+            <fieldset>
+                <input type="url" id="url" name="url" placeholder=" " required />
+                <label for="url">Enter URL</label>
+            </fieldset>
+            <fieldset>
+                <input type="text" id="shortCode" name="shortCode" placeholder=" " required />
+                <label for="shortCode">Enter ShortCode</label>
+            </fieldset>
+
+            <button type="submit" class="btn-submit">Get Short URL</button>
+
+        </form>
+
+        <!-- <div class="result-con">
+            <ul>
+                <a href="#">shortlink.com</a>
+                <li>input long link</li>
+            </ul>
+        </div> -->
+    </div>
+
+
+    <script>
+
+        document.querySelector(".btn-submit").addEventListener("click", (e) => {
+            e.preventDefault();
+
+            let formDate = new FormData(document.querySelector("form"));
+            let url = formDate.get("url");
+            let shortCode = formDate.get("shortCode");
+
+        })
+    </script>
+</body>
+
+</html>
