@@ -7,10 +7,10 @@ const path = require("path");
 const fileName = "README.md";
 const filePath = path.join(__dirname, fileName);
 const newFileName = "README_NEW.md";
-const newFilePath = path.join(__dirname,newFileName)
+const newFilePath = path.join(__dirname, newFileName)
 
 
-//! Create file
+// //! Create file
 // (async function (fp) {
 //     try {
 //         await fs.promises.writeFile(fp, "Initial Data");
