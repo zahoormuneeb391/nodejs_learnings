@@ -10,21 +10,11 @@ app.get("/users/:username/blogs/:slug", (req, res) => {
     let article = slug.split("-").join(" ").toUpperCase();
     console.log(req.params);
     res.send(
-        `<table>
-            <thead>
-                <tr>
-                    <th>Username</th>
-                    <th>Article</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>${username}</td>
-                    <td>${article}</td>
-                </tr>
-            </tbody>
-        </table>
         `
+    <h6>Username: ${username}</h6>
+    <h6>Article: ${article}</h6>
+    <h6>Slug: ${slug}</h6>
+    `
     );
 })
 

@@ -9,6 +9,6 @@
 ### Example:
 
 - **Actual Route** `https://site.com/muneebzahoor714/status/1161`
-- **Route Paramters** `https://site.com/:user/status/:id`;
+- **Dynamic Route** `https://site.com/:user/status/:id`;
 
 - Express automatically parses the route parametes and makes the value availble in `req.params` object.
